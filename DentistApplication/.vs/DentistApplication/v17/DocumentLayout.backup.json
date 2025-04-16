@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Nina\\Desktop\\Dr. Dzambazovski\\Application\\DentistApplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ECFD564C-6EDC-4928-8A21-2EE2C4F2524D}|DentistApplication\\DentistApplication.csproj|c:\\users\\nina\\desktop\\dr. dzambazovski\\application\\dentistapplication\\dentistapplication\\models\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECFD564C-6EDC-4928-8A21-2EE2C4F2524D}|DentistApplication\\DentistApplication.csproj|solutionrelative:dentistapplication\\models\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECFD564C-6EDC-4928-8A21-2EE2C4F2524D}|DentistApplication\\DentistApplication.csproj|c:\\users\\nina\\desktop\\dr. dzambazovski\\application\\dentistapplication\\dentistapplication\\forms\\patientsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECFD564C-6EDC-4928-8A21-2EE2C4F2524D}|DentistApplication\\DentistApplication.csproj|solutionrelative:dentistapplication\\forms\\patientsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECFD564C-6EDC-4928-8A21-2EE2C4F2524D}|DentistApplication\\DentistApplication.csproj|c:\\users\\nina\\desktop\\dr. dzambazovski\\application\\dentistapplication\\dentistapplication\\forms\\patientsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECFD564C-6EDC-4928-8A21-2EE2C4F2524D}|DentistApplication\\DentistApplication.csproj|solutionrelative:dentistapplication\\forms\\patientsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECFD564C-6EDC-4928-8A21-2EE2C4F2524D}|DentistApplication\\DentistApplication.csproj|C:\\Users\\Nina\\Desktop\\Dr. Dzambazovski\\Application\\DentistApplication\\dentistapplication\\forms\\patientsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ECFD564C-6EDC-4928-8A21-2EE2C4F2524D}|DentistApplication\\DentistApplication.csproj|solutionrelative:dentistapplication\\forms\\patientsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PatientService.cs",
+              "DocumentMoniker": "C:\\Users\\Nina\\Desktop\\Dr. Dzambazovski\\Application\\DentistApplication\\DentistApplication\\Models\\PatientService.cs",
+              "RelativeDocumentMoniker": "DentistApplication\\Models\\PatientService.cs",
+              "ToolTip": "C:\\Users\\Nina\\Desktop\\Dr. Dzambazovski\\Application\\DentistApplication\\DentistApplication\\Models\\PatientService.cs",
+              "RelativeToolTip": "DentistApplication\\Models\\PatientService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T13:26:50.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PatientsForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Nina\\Desktop\\Dr. Dzambazovski\\Application\\DentistApplication\\DentistApplication\\Forms\\PatientsForm.Designer.cs",
+              "RelativeDocumentMoniker": "DentistApplication\\Forms\\PatientsForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Nina\\Desktop\\Dr. Dzambazovski\\Application\\DentistApplication\\DentistApplication\\Forms\\PatientsForm.Designer.cs",
+              "RelativeToolTip": "DentistApplication\\Forms\\PatientsForm.Designer.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAkwFQAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T19:45:17.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PatientsForm.cs",
+              "DocumentMoniker": "C:\\Users\\Nina\\Desktop\\Dr. Dzambazovski\\Application\\DentistApplication\\DentistApplication\\Forms\\PatientsForm.cs",
+              "RelativeDocumentMoniker": "DentistApplication\\Forms\\PatientsForm.cs",
+              "ToolTip": "C:\\Users\\Nina\\Desktop\\Dr. Dzambazovski\\Application\\DentistApplication\\DentistApplication\\Forms\\PatientsForm.cs",
+              "RelativeToolTip": "DentistApplication\\Forms\\PatientsForm.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAkwFcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T19:44:39.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PatientsForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Nina\\Desktop\\Dr. Dzambazovski\\Application\\DentistApplication\\DentistApplication\\Forms\\PatientsForm.cs",
+              "RelativeDocumentMoniker": "DentistApplication\\Forms\\PatientsForm.cs",
+              "ToolTip": "C:\\Users\\Nina\\Desktop\\Dr. Dzambazovski\\Application\\DentistApplication\\DentistApplication\\Forms\\PatientsForm.cs [Design]",
+              "RelativeToolTip": "DentistApplication\\Forms\\PatientsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T19:39:20.267Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
