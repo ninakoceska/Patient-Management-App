@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             dgvPatients = new DataGridView();
             txtSearch = new TextBox();
+            btnDeletePatient = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvPatients).BeginInit();
             SuspendLayout();
             // 
@@ -45,23 +46,23 @@
             dgvPatients.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvPatients.BackgroundColor = Color.FromArgb(243, 240, 233);
             dgvPatients.BorderStyle = BorderStyle.Fixed3D;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = Color.Transparent;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 13F);
-            dataGridViewCellStyle3.ForeColor = Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(114, 148, 148);
-            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
-            dgvPatients.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.Transparent;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 13F);
+            dataGridViewCellStyle1.ForeColor = Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(114, 148, 148);
+            dataGridViewCellStyle1.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgvPatients.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgvPatients.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = SystemColors.Window;
-            dataGridViewCellStyle4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle4.ForeColor = Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(114, 148, 148);
-            dataGridViewCellStyle4.SelectionForeColor = Color.Black;
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.False;
-            dgvPatients.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Window;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.ForeColor = Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(114, 148, 148);
+            dataGridViewCellStyle2.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dgvPatients.DefaultCellStyle = dataGridViewCellStyle2;
             dgvPatients.Location = new Point(2, 83);
             dgvPatients.Name = "dgvPatients";
             dgvPatients.ReadOnly = true;
@@ -69,7 +70,7 @@
             dgvPatients.ScrollBars = ScrollBars.Vertical;
             dgvPatients.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvPatients.Size = new Size(797, 368);
-            dgvPatients.TabIndex = 0;
+            dgvPatients.TabIndex = 1;
             dgvPatients.CellDoubleClick += dgvPatients_CellDoubleClick;
             // 
             // txtSearch
@@ -81,8 +82,22 @@
             txtSearch.MinimumSize = new Size(550, 40);
             txtSearch.Name = "txtSearch";
             txtSearch.Size = new Size(550, 40);
-            txtSearch.TabIndex = 1;
+            txtSearch.TabIndex = 0;
             txtSearch.TextChanged += txtSearch_TextChanged;
+            // 
+            // btnDeletePatient
+            // 
+            btnDeletePatient.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnDeletePatient.BackColor = Color.Maroon;
+            btnDeletePatient.Font = new Font("Segoe UI", 10F);
+            btnDeletePatient.ForeColor = Color.White;
+            btnDeletePatient.Location = new Point(636, 417);
+            btnDeletePatient.Name = "btnDeletePatient";
+            btnDeletePatient.Size = new Size(163, 34);
+            btnDeletePatient.TabIndex = 11;
+            btnDeletePatient.Text = "Избриши пациент";
+            btnDeletePatient.UseVisualStyleBackColor = false;
+            btnDeletePatient.Click += btnDeletePatient_Click;
             // 
             // PatientsForm
             // 
@@ -90,6 +105,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(243, 240, 233);
             ClientSize = new Size(800, 450);
+            Controls.Add(btnDeletePatient);
             Controls.Add(txtSearch);
             Controls.Add(dgvPatients);
             ForeColor = Color.Black;
@@ -105,5 +121,6 @@
 
         private DataGridView dgvPatients;
         private TextBox txtSearch;
+        private Button btnDeletePatient;
     }
 }

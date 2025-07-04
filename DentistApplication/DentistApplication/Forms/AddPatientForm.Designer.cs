@@ -47,7 +47,7 @@
             // 
             // txtLastName
             // 
-            txtLastName.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            txtLastName.Anchor = AnchorStyles.Top;
             txtLastName.Font = new Font("Segoe UI", 13F);
             txtLastName.ForeColor = Color.FromArgb(13, 73, 81);
             txtLastName.Location = new Point(103, 197);
@@ -58,7 +58,7 @@
             // 
             // txtEMBG
             // 
-            txtEMBG.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            txtEMBG.Anchor = AnchorStyles.Top;
             txtEMBG.Font = new Font("Segoe UI", 13F);
             txtEMBG.ForeColor = Color.FromArgb(13, 73, 81);
             txtEMBG.Location = new Point(103, 294);
@@ -70,7 +70,7 @@
             // 
             // txtPhoneNumber
             // 
-            txtPhoneNumber.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            txtPhoneNumber.Anchor = AnchorStyles.Top;
             txtPhoneNumber.Font = new Font("Segoe UI", 13F);
             txtPhoneNumber.ForeColor = Color.FromArgb(13, 73, 81);
             txtPhoneNumber.Location = new Point(103, 395);
@@ -81,7 +81,7 @@
             // 
             // txtEmailAddress
             // 
-            txtEmailAddress.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            txtEmailAddress.Anchor = AnchorStyles.Top;
             txtEmailAddress.Font = new Font("Segoe UI", 13F);
             txtEmailAddress.ForeColor = Color.FromArgb(13, 73, 81);
             txtEmailAddress.Location = new Point(103, 493);
@@ -92,7 +92,7 @@
             // 
             // txtHomeAddress
             // 
-            txtHomeAddress.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            txtHomeAddress.Anchor = AnchorStyles.Top;
             txtHomeAddress.Font = new Font("Segoe UI", 13F);
             txtHomeAddress.ForeColor = Color.FromArgb(13, 73, 81);
             txtHomeAddress.Location = new Point(103, 594);
@@ -103,7 +103,7 @@
             // 
             // txtFirstName
             // 
-            txtFirstName.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            txtFirstName.Anchor = AnchorStyles.Top;
             txtFirstName.Font = new Font("Segoe UI", 13F);
             txtFirstName.ForeColor = Color.FromArgb(13, 73, 81);
             txtFirstName.Location = new Point(103, 100);
@@ -114,7 +114,7 @@
             // 
             // txtDescription
             // 
-            txtDescription.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            txtDescription.Anchor = AnchorStyles.Top;
             txtDescription.Font = new Font("Segoe UI", 13F);
             txtDescription.Location = new Point(597, 100);
             txtDescription.Name = "txtDescription";
@@ -136,7 +136,7 @@
             // 
             // LabelName
             // 
-            LabelName.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            LabelName.Anchor = AnchorStyles.Top;
             LabelName.AutoSize = true;
             LabelName.Font = new Font("Segoe UI", 15F);
             LabelName.ForeColor = Color.FromArgb(13, 73, 81);
@@ -148,7 +148,7 @@
             // 
             // label2
             // 
-            label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            label2.Anchor = AnchorStyles.Top;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 15F);
             label2.ForeColor = Color.FromArgb(13, 73, 81);
@@ -160,7 +160,7 @@
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 15F);
             label1.ForeColor = Color.FromArgb(13, 73, 81);
@@ -172,7 +172,7 @@
             // 
             // label3
             // 
-            label3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            label3.Anchor = AnchorStyles.Top;
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 15F);
             label3.ForeColor = Color.FromArgb(13, 73, 81);
@@ -184,7 +184,7 @@
             // 
             // label4
             // 
-            label4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            label4.Anchor = AnchorStyles.Top;
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 15F);
             label4.ForeColor = Color.FromArgb(13, 73, 81);
@@ -196,7 +196,7 @@
             // 
             // label5
             // 
-            label5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            label5.Anchor = AnchorStyles.Top;
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 15F);
             label5.ForeColor = Color.FromArgb(13, 73, 81);
@@ -212,7 +212,7 @@
             btnSavePatient.BackColor = Color.FromArgb(13, 73, 81);
             btnSavePatient.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnSavePatient.ForeColor = SystemColors.Control;
-            btnSavePatient.Location = new Point(122, 707);
+            btnSavePatient.Location = new Point(113, 692);
             btnSavePatient.Name = "btnSavePatient";
             btnSavePatient.Size = new Size(208, 73);
             btnSavePatient.TabIndex = 15;

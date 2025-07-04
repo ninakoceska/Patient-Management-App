@@ -8,17 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DentistApplication.Models;
+using Microsoft.Identity.Client;
 
 namespace DentistApplication.Forms
 {
     public partial class AddPatientForm : Form
     {
         BindingList<Patient> patients;
+        public event Action OpenPatientsList;
         public AddPatientForm()
         {
             InitializeComponent();
 
             patients = new BindingList<Patient>();
+            
             
         }
 
@@ -49,6 +52,9 @@ namespace DentistApplication.Forms
                 txtDescription.Text = "";
                 MessageBox.Show("Пациентот е успешно додаден!");
                 Program.Context.SaveChanges();
+                OpenPatientsList.Invoke();
+
+
             }
             else
             {

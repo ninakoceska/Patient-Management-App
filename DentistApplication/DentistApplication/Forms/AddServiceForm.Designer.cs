@@ -33,6 +33,7 @@
             btnAddNewService = new Button();
             btnOffer = new Button();
             gbNewService = new GroupBox();
+            chbEuro = new CheckBox();
             button2 = new Button();
             button1 = new Button();
             label2 = new Label();
@@ -50,7 +51,7 @@
             dgvServices.AllowUserToDeleteRows = false;
             dgvServices.AllowUserToResizeColumns = false;
             dgvServices.AllowUserToResizeRows = false;
-            dgvServices.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvServices.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgvServices.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvServices.BackgroundColor = Color.FromArgb(212, 207, 195);
             dgvServices.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -68,12 +69,11 @@
             dgvServices.RowHeadersWidth = 51;
             dgvServices.RowTemplate.Height = 45;
             dgvServices.Size = new Size(926, 631);
-            dgvServices.TabIndex = 0;
+            dgvServices.TabIndex = 3;
             dgvServices.CellDoubleClick += dgvServices_CellDoubleClick;
             // 
             // btnAddNewService
             // 
-            btnAddNewService.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             btnAddNewService.BackColor = Color.FromArgb(13, 73, 81);
             btnAddNewService.Font = new Font("Segoe UI", 12F);
             btnAddNewService.ForeColor = Color.White;
@@ -87,7 +87,7 @@
             // 
             // btnOffer
             // 
-            btnOffer.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnOffer.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btnOffer.BackColor = Color.FromArgb(13, 73, 81);
             btnOffer.Font = new Font("Segoe UI", 12F);
             btnOffer.ForeColor = Color.White;
@@ -97,10 +97,12 @@
             btnOffer.TabIndex = 2;
             btnOffer.Text = "Креирај понуда";
             btnOffer.UseVisualStyleBackColor = false;
+            btnOffer.Click += btnOffer_Click;
             // 
             // gbNewService
             // 
             gbNewService.Anchor = AnchorStyles.None;
+            gbNewService.Controls.Add(chbEuro);
             gbNewService.Controls.Add(button2);
             gbNewService.Controls.Add(button1);
             gbNewService.Controls.Add(label2);
@@ -115,6 +117,18 @@
             gbNewService.TabStop = false;
             gbNewService.Text = "Додај Услуга";
             // 
+            // chbEuro
+            // 
+            chbEuro.Anchor = AnchorStyles.None;
+            chbEuro.AutoSize = true;
+            chbEuro.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            chbEuro.Location = new Point(244, 246);
+            chbEuro.Name = "chbEuro";
+            chbEuro.Size = new Size(128, 24);
+            chbEuro.TabIndex = 2;
+            chbEuro.Text = "Цена во евра";
+            chbEuro.UseVisualStyleBackColor = true;
+            // 
             // button2
             // 
             button2.Anchor = AnchorStyles.None;
@@ -124,7 +138,7 @@
             button2.Location = new Point(624, 26);
             button2.Name = "button2";
             button2.Size = new Size(37, 36);
-            button2.TabIndex = 5;
+            button2.TabIndex = 4;
             button2.Text = "x";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
@@ -135,10 +149,10 @@
             button1.BackColor = Color.FromArgb(13, 73, 81);
             button1.Font = new Font("Segoe UI", 12F);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(189, 254);
+            button1.Location = new Point(189, 285);
             button1.Name = "button1";
             button1.Size = new Size(311, 48);
-            button1.TabIndex = 4;
+            button1.TabIndex = 3;
             button1.Text = "Зачувај Услуга";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
@@ -201,11 +215,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(243, 240, 233);
             ClientSize = new Size(1090, 801);
-            Controls.Add(label3);
             Controls.Add(gbNewService);
             Controls.Add(btnOffer);
             Controls.Add(btnAddNewService);
             Controls.Add(dgvServices);
+            Controls.Add(label3);
             FormBorderStyle = FormBorderStyle.None;
             Name = "AddServiceForm";
             Text = "AddServiceForm";
@@ -229,5 +243,6 @@
         private Label label2;
         private Label label1;
         private Label label3;
+        private CheckBox chbEuro;
     }
 }

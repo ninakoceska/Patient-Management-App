@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Forms;
 
 namespace DentistApplication.Forms
@@ -22,13 +23,21 @@ namespace DentistApplication.Forms
 
             _patientsForm = new PatientsForm();
             _addPatientForm = new AddPatientForm();
+            _addPatientForm.OpenPatientsList += OnChildFormRequestTabSwitch;
             _addServiceForm = new AddServiceForm();
 
             InitializeFormInPanel(_patientsForm, tabPage2);
             InitializeFormInPanel(_addPatientForm, tabPage3);
             InitializeFormInPanel(_addServiceForm, tabPage4);
 
+
         }
+        private void OnChildFormRequestTabSwitch()
+        {
+            tabControl.SelectedIndex = 1;
+        }
+
+
 
         private void Home_Shown(object sender, EventArgs e)
         {

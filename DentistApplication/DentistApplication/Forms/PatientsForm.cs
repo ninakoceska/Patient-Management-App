@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Forms;
 using DentistApplication.Models;
 using Microsoft.EntityFrameworkCore;
@@ -24,6 +25,7 @@ namespace DentistApplication.Forms
             AlterColumns();
 
         }
+        
 
         private void AlterColumns()
         {
@@ -42,12 +44,15 @@ namespace DentistApplication.Forms
 
         public void LoadList()
         {
+            
             patients.Clear();
 
-            foreach (Patient x in Program.Context.Patients)
-            {
-                patients.Add(x);
-            }
+                List<Patient> p = Program.Context.Patients.ToList();
+                for (int i = p.Count() - 1; i >= 0; i--)
+                {
+                    patients.Add(p[i]);
+                }
+            
         }
 
         private void dgvPatients_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -87,6 +92,20 @@ namespace DentistApplication.Forms
 
             dgvPatients.DataSource = filtered;
 
+        }
+
+        private void btnDeletePatient_Click(object sender, EventArgs e)
+        {
+            if (dgvPatients.RowCount>0)
+            {
+                DataGridViewRow selectedRow = dgvPatients.SelectedRows[0];
+                Patient p = (Patient)selectedRow.DataBoundItem;
+
+                Program.Context.Patients.Remove(p);
+                Program.Context.SaveChanges();
+                LoadList();
+            }
+            
         }
     }
 }

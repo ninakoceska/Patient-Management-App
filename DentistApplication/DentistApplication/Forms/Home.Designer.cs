@@ -114,9 +114,8 @@
             ClientSize = new Size(978, 599);
             Controls.Add(tabControl);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            MinimizeBox = false;
             Name = "Home";
-            Text = "Home";
+            Text = "Др. Џамбазовски";
             WindowState = FormWindowState.Maximized;
             Shown += Home_Shown;
             tabControl.ResumeLayout(false);
